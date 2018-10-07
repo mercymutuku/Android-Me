@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    tools:context=".ui.MainActivity">
+
+    <!-- master list fragment -->
+    <fragment
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:id="@+id/master_list_fragment"
+        android:name="com.example.android.android_me.ui.MasterLIstFragment">
+
+    </fragment>
+
+    <!-- a small divider line -->
+
+    <view
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- linear layout the three android me body parts images vertically -->
+    <LinearLayout
+        android:id="@+id/android_me_linear_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:background="@android:color/white"
+        android:padding="16dp">
+
+        <FrameLayout
+            android:id="@+id/head_container"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerInside"/>
+
+        <FrameLayout
+            android:id="@+id/body_container"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerInside"/>
+
+        <FrameLayout
+            android:id="@+id/leg_container"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerInside"/>
+
+    </LinearLayout>
+
+</LinearLayout>

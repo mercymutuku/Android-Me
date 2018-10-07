@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Turn this into a LinearLayout and add a Next button at the bottom of GridView -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:id="@+id/gv_images"
+        android:gravity="center"
+        android:adjustViewBounds="true"
+        android:numColumns="3"
+        android:horizontalSpacing="3dp"
+        android:padding="16dp"
+        android:verticalSpacing="8dp"
+        android:stretchMode="columnWidth">
+
+    </GridView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btn_next"
+        android:id="@+id/btn_next"/>
+
+</LinearLayout>
